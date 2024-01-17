@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: left; border-style: solid; border-color: rosybrown;">
+        <form onsubmit="onSubmit()">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="bday" name="bday"><br><br>
+            
+            <select id="Country" name="country">
+                <option value="Nepal">Nepal</option>
+                <option value="india">india</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+              </select>
+    
+            <label for="tel">teleno:</label>
+            <input type="number" max="10"><br><br>
+    
+            <label for="mob">mobile no:</label>
+            <select id="Country" name="country">
+                <option value="Nepal">Nepal</option>
+                <option value="india">india</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+              </select>
+              <input type="number" min="10"><br><br>
+            
+              <input type="radio" id="agree" name="agree" value="agree">
+              <label for="html">I agree</label><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="submit" value="Reset">
+        </form> 
+    
+        <script>
+            function onSubmit(){
+                alert("Submitted successfully");
+            }
+        </script> 
+    </div>
+    
+        
+</body>
+</html>
