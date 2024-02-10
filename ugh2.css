@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: antiquewhite;
+}
+
+#home{
+    padding-top: 120px;
+    overflow: hidden;
+    background-image: url('https://wallpapertag.com/wallpaper/middle/2/2/6/118464-neutral-background-1920x1080-windows.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#intro{
+    text-align: center;
+}
+
+#home h1
+    {
+        border: 2px solid #D43F52;
+        border-radius: 2%;
+        color: #D43F52;
+        display: inline-block;
+        letter-spacing: 6px;
+        padding: 25px 35px;
+        margin: 30px 0;
+    }
