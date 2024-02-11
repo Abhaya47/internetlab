@@ -16,21 +16,11 @@
     <div id="fullpage">
         <div class="side-nav vh-100">
             <ul class="list">
-                <li class="side">
-                    <a href="#home"><span> </span></a>
-                </li>
-
-                <li class="side">
-                    <a href="#accolades"><div> </div></a>
-                </li>
-
-                <li class="side">
-                    <a href="#skills"><div> </div></a>
-                </li>
-
-                <li class="side">
-                    <a href="#contact"><div> </div></a>
-                </li>
+                <a href="#home"><li class="side"></li></a>
+                <a href="#accolades"><li class="side"></li></a>
+                <a href="#skills"><li class="side"></li></a>
+                <a href="#portfolio"><li class="side"></li></a>
+                <a href="#contact"><li class="side"></li></a>
             </ul>
         </div>
 
@@ -50,14 +40,14 @@
                     <h4>What I do</h4>
                 <div class="col-md-6" id="doing">
                     <div class="things">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fa fa-laptop" style="font-size: 2em;"></i>
                     </div>
                     <h5>Create</h5>
                     <h6>I can create basic apps both frontend and backend</h6>
                 </div>
                 <div class="col-md-6" id="doing">
                     <div class="things">
-                        <i class="fa fa-paper-plane"></i>
+                        <i class="fa fa-paper-plane" style="font-size: 2em;"></i>
                     </div>
                     <h5>Solve problems</h5>
                     <h6>I don't give up in the face of adversity and can solve any problem</h6>
@@ -95,21 +85,22 @@
             <div class="container">
                 <div class="row vh-100">
                         <h2>PORTFOLIO</h2>
-                    <div class="col-md-3">
+                    <div class="col-md-3 port">
                             <!-- <img src="portfolio-img2.jpg" class="img-fluid" alt="Responsive image"> -->
                                 <div class="portfolio-explain">
                                     <h4>Web Design</h4>
                                     <h6>I did designed this</h6>
                                 </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 port">
                             <!-- <a href="https://github.com/Abhaya47/Major_backend"><img src="webapp.jpg" class="img-fluid" alt="Responsive image" style="overflow: hidden;"></a> -->
                                 <div class="portfolio-explain">
-                                    <a href="https://github.com/Abhaya47/Major_backend"><h4>Web App</h4><small>click-me</small></a>
+                                    <h4>Web App</h4>
                                     <h5>Created backend for major project</h5>
+                                    <a class="btn btn-outline-primary" href="https://github.com/Abhaya47/Major_backend" role="button"><h6>Project</h6></a>
                                 </div>
                     </div>
-                    <div class="col-md-3" >
+                    <div class="col-md-3 port">
                             <!-- <img src="phone.jpg"  class="img-fluid" alt="Responsive image" style="height: 100%;"> -->
                                 <div class="portfolio-explain">
                                     <h4>Mobile App</h4></a>
@@ -117,11 +108,12 @@
                                 </div>
                     </div>
                     
-                    <div class="col-md-3" >
+                    <div class="col-md-3 port">
                             <!-- <a href="https://github.com/Abhaya47/minor-project-"><img src="bg.jpeg" class="img-fluid" alt="Responsive image"></a> -->
                                 <div class="portfolio-explain">
-                                    <a href="https://github.com/Abhaya47/minor-project-"><h4>AI</h4><small>click-me</small></a>
+                                    <h4>AI</h4>
                                     <h5>I've dabled with AI</h5>
+                                    <a class="btn btn-outline-primary" href="https://github.com/Abhaya47/minor-project-" role="button"><h6>Project</h6></a>
                                 </div>
                     </div>
                 </div>
@@ -151,7 +143,7 @@
 					<div class="col-md-1"></div>
                     <div class="row">
                         <div class="col-md-6 plogo">
-                            <a href="https://www.linkedin.com/in/cantthink/"><img src="icons8-linkedin-100.png"></a>                        
+                            <a href="https://www.linkedin.com/in/abhaya47/"><img src="icons8-linkedin-100.png"></a>                        
                         </div>
                         <div class="col-md-6 plogo"> 
                             <a href="https://github.com/Abhaya47"><img src="icons8-github-100.png"></a>
@@ -166,6 +158,7 @@
     <script>
         function onSubmit(){
             alert("Submitted successfully");
+            event.preventDefault();
         }
     </script> 
 </body>
